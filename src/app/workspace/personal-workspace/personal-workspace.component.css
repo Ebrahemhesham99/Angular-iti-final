@@ -1,0 +1,118 @@
+::ng-deep :root{
+  --dynamic-button:transperant;
+  --content-li-bg:#091e420f;
+}
+:hover{
+background-color: #ffffff00;
+}
+.custom-button {
+    position: relative;
+    margin-left:211px;
+    width: 276px;
+    height: 50px;
+    background-color: #91CAFF;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  #anchor-menu:hover{
+    cursor: pointer;
+  }
+  .popup {
+    margin: 70px auto;
+    background: #fff;
+    border-radius: 10px;
+    width: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top:12px;
+    right: 30px;
+    transition: all 200ms;
+    font-size:40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #0d6efd;
+  }
+  .popup .content {
+    overflow: auto;
+  }
+  .heading-bar {
+    background-color: #0066CC;
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    min-height: 90px;
+    box-sizing: border-box;
+  }
+  .task-form{
+    background-color: #19151522;
+    min-height: 500px;
+    padding: 10px 20px;
+  }
+  .task-form .container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  .sidebar-content >ul >li{
+    background-color: var(--content-li-bg);
+    padding: 10px 30px 10px 10px !important;
+    width: 70%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+  }
+  
+  
+  /* .window-cover-menu {
+    align-items: center;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    position: absolute;
+    width: 100%;
+  }
+  .window-cover-menu-button{
+  background-color: var(--dynamic-button);
+    border-radius: 3px;
+    color: #fff;
+    padding: 6px 12px 6px 6px;
+    text-decoration: none;
+  } */
+@media (max-width: 768px) {
+.Workspaces{
+    width: 100% !important;
+    margin-left:0 !important;
+}
+}
